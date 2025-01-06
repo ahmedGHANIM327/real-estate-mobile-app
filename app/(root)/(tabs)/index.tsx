@@ -3,6 +3,7 @@ import {SafeAreaView} from "react-native-safe-area-context";
 import {useGlobalContext} from "@/lib/global-provider";
 import {Redirect} from "expo-router";
 import icons from "@/constants/icons";
+import Search from "@/components/Search";
 
 export default function Index() {
 
@@ -30,8 +31,10 @@ export default function Index() {
                 </View>
                 <Image source={icons.bell} className="size-6" />
             </View>
-        </View>
 
+            <Search />
+
+        </View>
     </SafeAreaView>
   );
 }
